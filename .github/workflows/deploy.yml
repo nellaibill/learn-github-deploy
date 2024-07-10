@@ -24,6 +24,9 @@ jobs:
     - name: Build Angular project
       run: npm run build -- --prod
 
+    - name: List files (Debugging step)
+      run: ls -R dist
+
     - name: Deploy to GitHub Pages
       run: npx angular-cli-ghpages --dir=dist/my-angular-app
       env:
