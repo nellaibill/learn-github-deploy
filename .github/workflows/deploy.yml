@@ -24,7 +24,7 @@ jobs:
     - name: Build Angular project
       run: npm run build -- --prod
 
-    - name: List files (Debugging step)
+    - name: List build directory contents
       run: ls -R dist
 
     - name: Deploy to GitHub Pages
